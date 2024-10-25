@@ -197,7 +197,6 @@ const catAnswers = [
 ];
 
 const catMemes = [
-  "images/cat-1.gif", // Keyboard cat
   "images/cat-2.gif", // Excited cat
   "images/cat-3.gif", // Dancing cat
   "images/cat-4.gif", // Glowing eyes cat
