@@ -5,23 +5,16 @@ mkdir -p images
 
 cd images
 
-# Download crypto cat themed GIFs
-wget -O crypto-cat-1.gif "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDN2Y3E2ZWR1Y2NxbXgxOHd4ZnBxbWR0Y2Zwd2VqcXBxeGN3YnFtdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JtBZm3Getg3dqxK0zP/giphy.gif"
-wget -O crypto-cat-2.gif "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDN2Y3E2ZWR1Y2NxbXgxOHd4ZnBxbWR0Y2Zwd2VqcXBxeGN3YnFtdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qlvCVH9zprgbJ7Bstg/giphy.gif"
-wget -O crypto-cat-3.gif "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDN2Y3E2ZWR1Y2NxbXgxOHd4ZnBxbWR0Y2Zwd2VqcXBxeGN3YnFtdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H1B3MQqV2kzuCqR3kY/giphy.gif"
-
-# Download mystical cat themed GIFs
-wget -O mystical-cat-1.gif "https://media.giphy.com/media/3o7TKpxQI3xYShZvj2/giphy.gif"
-wget -O mystical-cat-2.gif "https://media.giphy.com/media/l0MYtNWaJvYqoNXxe/giphy.gif"
-wget -O mystical-cat-3.gif "https://media.giphy.com/media/3o7TKSRNcdPmjp8k4E/giphy.gif"
-
-# Download space cat themed GIFs
-wget -O space-cat-1.gif "https://media.giphy.com/media/l0MYBQd6yPLfjwZ5S/giphy.gif"
-wget -O space-cat-2.gif "https://media.giphy.com/media/l0MYBpKd8qC9dEEHC/giphy.gif"
-wget -O space-cat-3.gif "https://media.giphy.com/media/l0MYBvxUYZheat8Hu/giphy.gif"
-
-# Download wizard cat themed GIFs
-wget -O wizard-cat-1.gif "https://media.giphy.com/media/3o7TKECNuyE3fyl8Hu/giphy.gif"
-wget -O wizard-cat-2.gif "https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif"
+# Download funny cat memes
+curl -o cat-1.gif "https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif"
+curl -o cat-2.gif "https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
+curl -o cat-3.gif "https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+curl -o cat-4.gif "https://media.giphy.com/media/13CoXDiaCcCoyk/giphy.gif"
+curl -o cat-5.gif "https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif"
+curl -o cat-6.gif "https://media.giphy.com/media/BzyTuYCmvSORqs1ABM/giphy.gif"
+curl -o cat-7.gif "https://media.giphy.com/media/nR4L10XlJcSeQ/giphy.gif"
+curl -o cat-8.gif "https://media.giphy.com/media/33OrjzUFwkwEg/giphy.gif"
+curl -o cat-9.gif "https://media.giphy.com/media/q1MeAPDDMb43K/giphy.gif"
+curl -o cat-10.gif "https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif"
 
 echo "Images downloaded successfully!"

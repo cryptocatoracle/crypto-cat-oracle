@@ -10,3 +10,7 @@ Thumbs.db
 
 # Dependency directories
 node_modules/
+
+# Image files
+*.gif
+images/
