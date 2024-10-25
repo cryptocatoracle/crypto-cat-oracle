@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Cat Oracle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🐱 Crypto Cat Oracle 🔮</h1>
+            <img src="https://i.imgur.com/3M3Qs8N.gif" alt="Crypto Cat" class="crypto-cat">
+        </div>
+        
+        <div class="oracle-section">
+            <label for="question" class="question-label">Ask me anything?</label>
+            <input type="text" id="question" placeholder="What's on your mind, hooman?">
+            <button onclick="getAnswer()" class="submit-btn">Ask the Cat Oracle</button>
+            
+            <div id="answer-container" class="answer-container hidden">
+                <div class="answer-box">
+                    <p id="answer"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ca-label">
+            CA: 12344
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
