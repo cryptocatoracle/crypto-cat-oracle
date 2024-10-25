@@ -10,23 +10,30 @@
     <div class="container">
         <div class="header">
             <h1>🐱 Crypto Cat Oracle 🔮</h1>
-            <img src="https://i.imgur.com/3M3Qs8N.gif" alt="Crypto Cat" class="crypto-cat">
-        </div>
-        
-        <div class="oracle-section">
-            <label for="question" class="question-label">Ask me anything?</label>
-            <input type="text" id="question" placeholder="What's on your mind, hooman?">
-            <button onclick="getAnswer()" class="submit-btn">Ask the Cat Oracle</button>
-            
-            <div id="answer-container" class="answer-container hidden">
-                <div class="answer-box">
-                    <p id="answer"></p>
-                </div>
+            <div class="ca-label">
+                CA: 12344
             </div>
         </div>
-
-        <div class="ca-label">
-            CA: 12344
+        
+        <div class="content-wrapper">
+            <div class="meme-container">
+                <img src="spoopy_cat_by_nifty_senpai_dbp7v5y-fullview.jpg" alt="Crypto Cat" class="crypto-cat">
+            </div>
+            
+            <div class="oracle-section">
+                <label for="question" class="question-label">Ask me anything?</label>
+                <input type="text" id="question" placeholder="What's on your mind, hooman?">
+                <button onclick="getAnswer()" class="submit-btn">Ask the Cat Oracle</button>
+                
+                <div id="answer-container" class="answer-container hidden">
+                    <div class="answer-box">
+                        <p id="answer"></p>
+                    </div>
+                    <div class="meme-response">
+                        <img id="responseMeme" class="response-meme" alt="Cat Meme">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
