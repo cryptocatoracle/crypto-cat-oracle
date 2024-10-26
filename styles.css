@@ -4,8 +4,7 @@
     --background-color: #1a1a1a;
     --text-color: #ecf0f1;
     --glow-color: #9b59b6;
-    --section-width: 280px;
-    --oracle-height: 500px;
+    --section-height: 500px;
 }
 
 * {
@@ -99,15 +98,15 @@ body {
     gap: 2rem;
     align-items: flex-start;
     justify-content: center;
-    flex-wrap: wrap;
     padding: 0 1rem;
     margin-bottom: 2rem;
+    flex-wrap: nowrap;
 }
 
 .meme-container {
     flex: 0 0 auto;
-    width: var(--section-width);
-    height: var(--section-width);
+    width: var(--section-height);
+    height: var(--section-height);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 0 20px var(--glow-color);
@@ -122,8 +121,8 @@ body {
 
 .oracle-section {
     flex: 0 0 auto;
-    width: var(--section-width);
-    height: var(--oracle-height);
+    width: 280px;
+    height: var(--section-height);
     background: rgba(155, 89, 182, 0.1);
     padding: 1rem;
     border-radius: 15px;
@@ -275,34 +274,20 @@ body {
 }
 
 /* Mobile Styles */
-@media (max-width: 768px) {
-    .container {
-        padding: 0.5rem;
-        margin-top: 5rem;
-    }
-
+@media (max-width: 1000px) {
     .content-wrapper {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        padding: 0 0.5rem;
     }
 
-    .meme-container, 
+    .meme-container {
+        width: 280px;
+        height: 280px;
+    }
+
     .oracle-section {
-        width: var(--section-width);
-    }
-
-    .oracle-section {
-        padding: 1rem;
-    }
-
-    .answer-box {
-        padding: 1rem;
-    }
-
-    .nav-menu ul {
-        gap: 1rem;
+        width: 280px;
     }
 }
 
