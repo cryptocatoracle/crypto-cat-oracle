@@ -4,6 +4,8 @@
     --background-color: #1a1a1a;
     --text-color: #ecf0f1;
     --glow-color: #9b59b6;
+    --section-width: 280px;
+    --oracle-height: 500px;
 }
 
 * {
@@ -104,8 +106,8 @@ body {
 
 .meme-container {
     flex: 0 0 auto;
-    width: 280px;
-    height: 280px;
+    width: var(--section-width);
+    height: var(--section-width);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 0 20px var(--glow-color);
@@ -120,13 +122,19 @@ body {
 
 .oracle-section {
     flex: 0 0 auto;
-    width: 280px;
+    width: var(--section-width);
+    height: var(--oracle-height);
     background: rgba(155, 89, 182, 0.1);
     padding: 1rem;
     border-radius: 15px;
     backdrop-filter: blur(5px);
     box-shadow: 0 0 20px rgba(155, 89, 182, 0.2);
-    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.question-section {
+    margin-bottom: 1rem;
 }
 
 .question-label {
@@ -168,12 +176,12 @@ body {
 }
 
 .answer-container {
-    margin-top: 1rem;
+    flex-grow: 1;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s, transform 0.5s;
-    max-height: 280px;
     overflow-y: auto;
+    margin-top: 1rem;
 }
 
 .answer-container.visible {
@@ -211,7 +219,8 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(155, 89, 182, 0.3);
-    height: 140px;
+    height: 200px;
+    margin-top: auto;
 }
 
 .response-meme {
@@ -246,6 +255,25 @@ body {
     margin-bottom: 1rem;
 }
 
+/* Custom scrollbar for answer container */
+.answer-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.answer-container::-webkit-scrollbar-track {
+    background: rgba(155, 89, 182, 0.1);
+    border-radius: 4px;
+}
+
+.answer-container::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.answer-container::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     .container {
@@ -262,7 +290,7 @@ body {
 
     .meme-container, 
     .oracle-section {
-        width: 280px;
+        width: var(--section-width);
     }
 
     .oracle-section {
@@ -312,23 +340,4 @@ body {
     .header h1 {
         font-size: 1.3rem;
     }
-}
-
-/* Custom scrollbar for answer container */
-.answer-container::-webkit-scrollbar {
-    width: 8px;
-}
-
-.answer-container::-webkit-scrollbar-track {
-    background: rgba(155, 89, 182, 0.1);
-    border-radius: 4px;
-}
-
-.answer-container::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
-    border-radius: 4px;
-}
-
-.answer-container::-webkit-scrollbar-thumb:hover {
-    background: var(--secondary-color);
 }
